@@ -1,0 +1,6 @@
+Problem 1:
+
+a) mkdir -p dir1/dir2
+b) rm -rf test1
+c) sed 's/test/affe/' tmp.txt 
+d) To concatinate commands in the console
