@@ -1,0 +1,7 @@
+Divide.cpp: In function ‘int main()’:
+Divide.cpp:17:12: warning: unused variable ‘z’ [-Wunused-variable]
+   17 |   double y,z;
+      |            ^
+Divide.cpp:18:21: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   18 |   cout << "y = " << y << endl;
+      |                     ^

@@ -1,0 +1,39 @@
+Programm 1.3
+
+a)
+Line 3: Missing semicolon after "using namespace std"
+        This is shown in err.log Line 1 - 7
+
+Line 5: keyword void should be int 
+        This is shown in err.log Line 8 - 10 
+
+Line 10: "cout >>" should face in the other direction
+        This is shown in err.log Line 12 - 96
+
+Line 11: b was never declared 
+        This is shown in err.log Line 97-99
+ 
+b) g++ Divide.cpp 2> err.log
+
+c) The programm was not showing the right behaviour 
+because it was calculating an integer division in line 14, i.e 
+if you passed 1 and 2 as values you got 0 as an answer.
+To fix this, the variables a and b have to be declared as an double value.
+
+d) g++ Divide.cpp -o Divide -Wall
+
+(original code) Line 17: The value z is unused in the code and should be removed from the script.
+        This is shown in the warnings.log on line 1-4
+
+(original code) Line 18: The value y (and z aswell) is not initlized in the script. 
+        Therefore printing this value is causing a really small number to appear. 
+        This leads to the assumption that due to the declaration as an 
+        double a floating point error occurs.
+        This is shown in the warning.log on line 5-6
+
+Therefore removing
+"double y,z;
+ cout << "y = " << y << endl;"
+is the way to prevent further issues. 
+
+
