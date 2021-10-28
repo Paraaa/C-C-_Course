@@ -1,0 +1,8 @@
+Problem 1.2:
+
+Compilte the code: 
+g++ Output.cpp -o Output
+
+a) ./Output > out.log
+b) ./Output 2> err.log
+c) ./Output &> both.log

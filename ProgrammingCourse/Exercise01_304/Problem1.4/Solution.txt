@@ -1,0 +1,11 @@
+a)
+Line 12: For-loop
+        Iterate through the code block until a condition is met.
+        In this example inkrement i while it is less than N. If
+        it is greater of equal to N the for-loop stops.
+
+Line 24: If-Else
+        If the condition in the brakets is true go in the first block
+        If the condition is not true go in the else block. 
+
+b) See: Addition.cpp
