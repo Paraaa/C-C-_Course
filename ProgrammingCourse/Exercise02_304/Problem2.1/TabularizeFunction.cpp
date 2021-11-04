@@ -13,14 +13,17 @@ int main(){
     double x_min, x_max, num_steps;
     double x; 
 
-    //read input
-    cout <<"Please enter a value for x_min: ";
+    /*read input
+      cerr is used due to the second task
+      swap cerr->cout to use the same std output stream.
+    */
+    cerr <<"Please enter a value for x_min: " << endl;
     cin >> x_min;
-    cout <<"Please enter a value for x_max: ";
+    cerr <<"Please enter a value for x_max: " << endl;
     cin >> x_max;
-    cout <<"Please enter a value for num_steps: ";
+    cerr <<"Please enter a value for num_steps: " << endl;
     cin >> num_steps;
-
+ 
 
     double delta = (x_max - x_min) / (num_steps - 1);
 
