@@ -1,0 +1,8 @@
+Please enter a value for x_min: 
+Please enter a value for x_max: 
+Please enter a value for num_steps: 
+-2	2.2072e-309
+-0.75	0.288865
+0.5	0.62402
+1.75	0.199803
+3	0.011109

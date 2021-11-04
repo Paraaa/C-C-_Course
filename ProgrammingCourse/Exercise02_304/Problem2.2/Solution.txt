@@ -1,0 +1,11 @@
+a) ./TabularizeFunction > ../Problem2.2/table.dat 
+
+b) Instead of cout we use cerr to request the user input.
+Therefore we use a differen output stream to 
+later redirect the output of the programm.
+
+c) ./TabularizeFunction < ../Problem2.2/parameter.in 
+
+d) ./TabularizeFunction 2> /dev/null
+This redirects the error stream into the void. 
+The output of the error is therefore not shown in the terminal and discarded. 
