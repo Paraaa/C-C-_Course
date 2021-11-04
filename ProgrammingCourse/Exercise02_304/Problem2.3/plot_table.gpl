@@ -1,0 +1,20 @@
+#creates an image file
+set terminal png
+set out 'table.png'
+
+#set title
+set title 'Plots'
+
+#sets the labels
+set xlabel 'x'
+set ylabel 'f(x)'
+
+#set the range of the axis
+set xrange [-2 to 3]
+set yrange [-2 to 2]
+
+#define function
+f(x) = sin((3*pi*x)/2) * exp(-(x*x)/2) 
+
+#plot data and f(x) to the screen
+plot 'table_cerr.dat' ps 3 pt 6, f(x)
