@@ -1,0 +1,7 @@
+a) The number of clock cylces is dependent 
+on number of N in an exponatial way. 
+(See plot.png)
+
+b) The extimated computer time for 
+1 000 000 values should be 1 000 000 * 10 ^ 2
+clock cylces.

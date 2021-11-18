@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -31,24 +32,26 @@ void BubbleSort(double a[], int n) {
 int main(int argc, char *argv[]) {
    
    // check if cmd-line argument was provided and exit with error if not
-   if (argc!=2) {
-      cerr << "Usage: ./BubbleSort <n>" << endl;
-      return 1;
-   }
+   //if (argc!=2) {
+   //   cerr << "Usage: ./BubbleSort <n>" << endl;
+   //   return 1;
+   //}
 
    // convert cmd-line argumetn to int, exit with error if n<=0
-   int n = atoi(argv[argc-1]);
-   if (n<=0) {
-      cerr << "Argument must be integer > 0" << endl;
-      return 1;
+   //int n = atoi(argv[argc-1]);
+   for(int n = 10000; n <= 100000; n+=1000){
+      //if (n<=0) {
+      //   cerr << "Argument must be integer > 0" << endl;
+      //   return 1;
+      //}
+
+      // initialize array with n random numbers
+      double *array = new double[n]; 
+      for (int i=0; i<n; i++) array[i] = drand();
+
+      // add code for timing here
+      int timestamp = clock();
+      BubbleSort(array,n);
+      cout << n << " "<< difftime(clock(), timestamp) << endl;
    }
-
-   // initialize array with n random numbers
-   double *array = new double[n]; 
-   for (int i=0; i<n; i++) array[i] = drand();
-
-   // add code for timing here
-   // ...
-   BubbleSort(array,n);
-   // ...  
 }
