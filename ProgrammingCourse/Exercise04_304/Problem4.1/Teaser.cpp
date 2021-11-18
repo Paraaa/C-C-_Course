@@ -9,6 +9,7 @@
  ********************************************************************************/
 #include <iostream>
 #include <cstdlib>
+#include <ctime> 
 
 using namespace std;
 
@@ -16,7 +17,7 @@ double drand() {
    static bool first=true;
    if (first) {
       first=false;
-      srand(123456);
+      srand(time(NULL));
    }
    return double(rand())/RAND_MAX;
 }

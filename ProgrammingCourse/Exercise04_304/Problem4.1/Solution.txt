@@ -1,0 +1,25 @@
+a)
+The program prints random continuous
+numbers in the range from 1 to 4.
+The user can give an argument to the programm
+to set the amount of printed random numbers.
+
+b)
+The same sequence of "random" numbers occure.
+This due to the fixed seed given in the 
+srand() function. 
+Due to the deteministic behaviour of 
+an computer system one can only 
+create pseudo-numbers and 
+therefore needs alternative methods.
+
+See: https://www.cplusplus.com/reference/cstdlib/srand/
+
+c)
+If you look at the documentation of
+srand() one can use the system time as 
+a seed. Each call of the srand() function
+the system time determined and used 
+as an input. Therefore the function is 
+time-variant and produces different 
+outputs at each time. 
