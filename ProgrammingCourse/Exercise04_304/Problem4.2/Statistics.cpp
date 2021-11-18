@@ -8,12 +8,18 @@ double mean(double arr[], int);
 double stddev(double arr[], int, double);
 
 int main(int argc, char *argv[]){
-    int num_val = argc - 1;
-    double *nums = new double[num_val];
-
-    for(int i = 1; i <= num_val; i++){
-        nums[i-1] = atof(argv[i]);
+    int num_val;
+    if(argc != 2){
+        cerr << "Use format: ./Statistics <Numbers> OR ./Statistics < file.in" << endl; 
+        return 1; 
     }
+    
+    num_val = atoi(argv[argc-1]);
+    double *nums = new double[num_val];
+    
+    for(int i = 0; i < num_val; i++) {
+        cin >> nums[i];
+	}
 
     double m = mean(nums, num_val);
     cout << "The mean is: " << m << endl;
@@ -29,7 +35,7 @@ double mean(double arr[] , int N){
     return sum/N;
 }
 
-double stddev(double arr[] , int N, double m){
+double stddev(double arr[], int N, double m){
     double sum = 0.0;
     for(int i = 0; i < N; i++){
         sum += (arr[i] - m) * (arr[i] - m); 

@@ -1,0 +1,6 @@
+The results from the programm are expected.
+Because the mean of a uniform distribution in 
+the range from 1 to 4 is 2.5. Therefore
+the programm calculates a approximation to this
+mean. The stddev should approximate 0 with
+a larger set of samples.  
