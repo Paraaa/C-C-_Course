@@ -1,0 +1,4 @@
+Smallest positive double epsilon is: 8.9203e-17
+Smallest negativ double epsilon is: 4.46015e-17
+Smallest positive float epsilon is: 3.77789e-08
+Smallest negativ double epsilon is: 1.88895e-08

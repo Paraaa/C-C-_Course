@@ -1,0 +1,24 @@
+a) The number of primes up to pmax = 2000 are 303.
+Output:
+"Enter upper limit for prime search: 2000
+Last ten (or all) primes for pmax = 2000 are: 1931 1933 1949 1951 1973 1979 1987 1993 1997 1999 
+The number of primes for pmax are: 303"
+
+b) The larger the given upper limit the longer the calculation
+time is expected. For a very large pmax (e.g 1.000.000.000) 
+it will take a very long time to compute on a personal computer.
+The computation time can be reduced with a faster processing unit.
+Another solution is to imrpove the efficiency of the algorithm.
+One more solution could be to use parallel programming and 
+calculate different ranges in different threads.
+Example:
+pmax = 500.000.000
+
+Create 1000 Threads and each Thread calculates 500.000 Numbers:
+
+T1: 0 .. 500.000
+T2: 500.001 .. 1 000 000 
+T3: 1 000 001  .. 1 500.000
+T4: 1 500.001 .. 2. 000.000
+...
+T1000: 499.500.001 .. 500.000.000
