@@ -1,0 +1,12 @@
+#creates an image file
+set terminal png
+set out 'plot.png'
+
+#set title
+set title 'Plots'
+
+#sets the labels
+set xlabel 'x'
+set ylabel 'f(x)'
+
+plot 'data.dat' ps 2 pt 3 with lines

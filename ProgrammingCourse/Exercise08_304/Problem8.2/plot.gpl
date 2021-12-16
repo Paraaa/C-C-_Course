@@ -1,0 +1,12 @@
+#creates an image file
+set terminal png
+set out 'plot.png'
+
+#set title
+set title 'Plots'
+
+#sets the labels
+set xlabel 'Iteration'
+set ylabel 'Random number'
+
+plot 'dataB.dat' ps 1 pt 3 with lines

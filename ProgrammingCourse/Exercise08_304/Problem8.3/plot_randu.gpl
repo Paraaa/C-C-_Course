@@ -1,0 +1,39 @@
+###
+### script for Gnuplot to plot random points in 3d space (spectral test)
+###
+### task:  plot x,y,z-data from a file randu.dat which must exist in 
+###        the same directory
+###
+### usage: $ gnuplot plot_randu.gpl
+###
+### help:  $ gnuplot    # to start Gnuplot   
+###        > help       # Gnuplot command 
+### 
+### Copyright (C) January 2015             Stefan Harfst (University Oldenburg)
+### This program is made freely available with the understanding that every copy
+### of this file must include this header and that it comes without any WITHOUT
+### ANY WARRANTY
+
+# begin of Gnuplot commands 
+
+## sets the labels for the x- and y-axis
+set xlabel 'x'
+set ylabel 'y'
+set ylabel 'z'
+
+## sets the ranges for the x- and y-axis
+set xrange [0 to 1]
+set yrange [0 to 1]
+set zrange [0 to 1]
+
+## sets the output to a png-file and the name of the file
+set terminal png
+set output 'randu.png'
+
+## here the viewing angle for the 3d plot is set
+## modify the first angle, e.g. in steps of 10 degree
+set view 30, 45
+
+## plots the data from the file
+splot 'randu.dat' t '' w d lc 3
+
