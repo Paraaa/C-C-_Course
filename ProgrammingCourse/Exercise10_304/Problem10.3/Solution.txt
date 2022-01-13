@@ -1,0 +1,23 @@
+b)
+If you try to execute 'make' again the following
+message is printed to the terminal: 
+
+"make: Nothing to be done for 'all'."
+
+This message shows that there is nothing to do due
+to the fact that the programm was already build. 
+
+c) 
+The make operation just recompiles the changed 
+files: 
+
+g++ -O3 -Wall -c SortedRandom.cpp
+g++ -O3 -Wall Rnd.o Sorting.o SortedRandom.o -o SortedRandom
+
+d) 
+No it does not work for header files yet. 
+
+One has to add the corrosponding header files to the 
+makefile to enable this behaviour.
+
+

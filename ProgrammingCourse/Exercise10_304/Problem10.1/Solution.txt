@@ -1,0 +1,27 @@
+a)
+There is a compilation error due to an undefined reference.
+
+$gcc Vector3d.cpp  -o Vector3d 
+
+/usr/bin/ld: /tmp/ccvevWT5.o: warning: relocation against `_ZSt4cout' in read-only section `.text'
+/usr/bin/ld: /tmp/ccvevWT5.o: in function `operator<<(std::ostream&, Vector3d)':
+Vector3d.cpp:(.text+0x25): undefined reference to `std::ostream::operator<<(int)'
+/usr/bin/ld: Vector3d.cpp:(.text+0x44): undefined reference to `std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)'
+/usr/bin/ld: Vector3d.cpp:(.text+0x5a): undefined reference to `std::ostream::operator<<(int)'
+/usr/bin/ld: /tmp/ccvevWT5.o: in function `main':
+Vector3d.cpp:(.text+0x13c): undefined reference to `std::cout'
+/usr/bin/ld: Vector3d.cpp:(.text+0x144): undefined reference to `std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)'
+/usr/bin/ld: Vector3d.cpp:(.text+0x170): undefined reference to `std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)'
+/usr/bin/ld: Vector3d.cpp:(.text+0x177): undefined reference to `std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&)'
+/usr/bin/ld: Vector3d.cpp:(.text+0x182): undefined reference to `std::ostream::operator<<(std::ostream& (*)(std::ostream&))'
+/usr/bin/ld: Vector3d.cpp:(.text+0x193): undefined reference to `std::cout'
+/usr/bin/ld: Vector3d.cpp:(.text+0x19b): undefined reference to `std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)'
+/usr/bin/ld: Vector3d.cpp:(.text+0x1c7): undefined reference to `std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)'
+/usr/bin/ld: Vector3d.cpp:(.text+0x1ce): undefined reference to `std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&)'
+/usr/bin/ld: Vector3d.cpp:(.text+0x1d9): undefined reference to `std::ostream::operator<<(std::ostream& (*)(std::ostream&))'
+/usr/bin/ld: /tmp/ccvevWT5.o: in function `__static_initialization_and_destruction_0(int, int)':
+Vector3d.cpp:(.text+0x20c): undefined reference to `std::ios_base::Init::Init()'
+/usr/bin/ld: Vector3d.cpp:(.text+0x227): undefined reference to `std::ios_base::Init::~Init()'
+/usr/bin/ld: warning: creating DT_TEXTREL in a PIE
+collect2: error: ld returned 1 exit status
+
