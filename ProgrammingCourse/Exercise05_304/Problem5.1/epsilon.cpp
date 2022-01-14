@@ -7,7 +7,8 @@ int main() {
 
     double epsilon_double = 2E-60;
     double eps_d = 0;
-    //Calculation for the positive double presision
+    //Calculation for the positive 
+    //double presision
     while(1 + epsilon_double == 1){
         eps_d = epsilon_double;
         epsilon_double = epsilon_double *2;
