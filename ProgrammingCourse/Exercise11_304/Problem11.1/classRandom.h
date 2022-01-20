@@ -15,7 +15,7 @@ using Ullint=unsigned long long int;
 
 class LCG {
 
- private:
+ protected:
   Ullint seed;
   Ullint a, c; 
   Ullint m;
