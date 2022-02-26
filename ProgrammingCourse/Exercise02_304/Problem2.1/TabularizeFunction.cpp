@@ -25,17 +25,14 @@ int main(){
     cin >> num_steps;
  
 
-    double delta = (x_max - x_min) / (num_steps - 1);
+    const double delta = (x_max - x_min) / double(num_steps - 1);
 
     //calculate solution
     for(int i = 0; i < num_steps; i++){ 
-        if(i != 0){
-            x = x_min + delta;
-            x_min = x;
-            cout << x << "\t" << f(x) << "\n";   
-        } else {
-            cout << x_min << "\t" << f(x) << "\n";
-        }
+        x = x_min + double(i) * delta;
+        x_min = x;
+        cout << x << "\t" << f(x) << "\n";   
+        cout << x_min << "\t" << f(x) << "\n";
     } 
 }   
 
